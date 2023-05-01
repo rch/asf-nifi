@@ -1,12 +1,12 @@
-{ jdk ? "jdk11" }:
+{ pkgs ? import <nixpkgs> {} }:
+pkgs.mkShell {
+  packages = [
+    pkgs.jdk17_headless
+    pkgs.maven
+  ];
 
-let
-  pkgs = import nix/pkgs.nix { inherit jdk; };
-in
-  pkgs.mkShell {
-    buildInputs = [
-      pkgs.${jdk}
-      pkgs.maven
-    ];
-  }
+  shellHook = ''
+    export DEBUG=1
+  '';
+}
 
