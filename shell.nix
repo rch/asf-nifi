@@ -1,12 +1,11 @@
-{ pkgs ? import <nixpkgs> {} }:
-pkgs.mkShell {
-  packages = [
-    pkgs.jdk17_headless
-    pkgs.maven
-  ];
+let
+  sources = import ./nix/sources.nix;
+  packages = import sources.nixpkgs {};
+in
+  packages.mkShell {
+    buildInputs = [
+      packages.jdk11_headless
+    ];
+  }
 
-  shellHook = ''
-    export DEBUG=1
-  '';
-}
 

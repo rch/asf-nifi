@@ -245,6 +245,7 @@ public class NiFiProperties extends ApplicationProperties {
     public static final String WEB_REQUEST_IP_WHITELIST = "nifi.web.request.ip.whitelist";
     public static final String WEB_SHOULD_SEND_SERVER_VERSION = "nifi.web.should.send.server.version";
     public static final String WEB_REQUEST_LOG_FORMAT = "nifi.web.request.log.format";
+    public static final String WEB_JMX_METRICS_ALLOWED_FILTER_PATTERN = "nifi.web.jmx.metrics.allowed.filter.pattern";
 
     // ui properties
     public static final String UI_BANNER_TEXT = "nifi.ui.banner.text";
@@ -305,6 +306,7 @@ public class NiFiProperties extends ApplicationProperties {
     public static final String STATE_MANAGEMENT_CONFIG_FILE = "nifi.state.management.configuration.file";
     public static final String STATE_MANAGEMENT_LOCAL_PROVIDER_ID = "nifi.state.management.provider.local";
     public static final String STATE_MANAGEMENT_CLUSTER_PROVIDER_ID = "nifi.state.management.provider.cluster";
+    public static final String STATE_MANAGEMENT_CLUSTER_PROVIDER_PREVIOUS_ID = "nifi.state.management.provider.cluster.previous";
     public static final String STATE_MANAGEMENT_START_EMBEDDED_ZOOKEEPER = "nifi.state.management.embedded.zookeeper.start";
     public static final String STATE_MANAGEMENT_ZOOKEEPER_PROPERTIES = "nifi.state.management.embedded.zookeeper.properties";
 
