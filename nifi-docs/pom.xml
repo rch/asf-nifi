@@ -50,13 +50,6 @@
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>1.5.2</version>
                 <executions>
-                    <execution>
-                        <id>output-html</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                    </execution>
                 </executions>
                 <configuration>
                     <sourceDirectory>${project.build.directory}/asciidoc</sourceDirectory>
