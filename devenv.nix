@@ -21,7 +21,7 @@
 
   # https://devenv.sh/languages/
   # languages.nix.enable = true;
-  languages.java.jdk.package = pkgs.jdk8_headless;
+  languages.java.jdk.package = pkgs.jdk11_headless;
   languages.java.enable = true;
 
   # https://devenv.sh/pre-commit-hooks/
